@@ -212,35 +212,35 @@ section {
     margin-bottom: 2rem;
 }
 
-/* == BARU: Carousel Navigation (Sudah dirapikan) == */
+/* Carousel Navigation (Sudah dirapikan) */
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Sentralisasi vertikal yang lebih baik */
-    width: 45px; /* Lebar tetap */
-    height: 45px; /* Tinggi tetap */
-    line-height: 47px; /* Sentralisasi ikon (sedikit disesuaikan) */
+    transform: translateY(-50%); 
+    width: 45px; 
+    height: 45px; 
+    line-height: 47px; 
     text-align: center;
     color: white;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.3); /* Sedikit lebih transparan */
-    border-radius: 8px; /* Sudut lebih rapi */
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 8px; 
     user-select: none;
     transition: background-color 0.3s ease;
     z-index: 100;
 }
 
 .prev {
-    left: 1.5rem; /* Memberi jarak dari tepi kiri */
+    left: 1.5rem; 
 }
 
 .next {
-    right: 1.5rem; /* Memberi jarak dari tepi kanan */
+    right: 1.5rem; 
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.6); /* Efek hover lebih jelas */
+    background-color: rgba(0, 0, 0, 0.6); 
 }
 
 /* Dots (indikator slide) */
@@ -295,17 +295,44 @@ section {
 /* Packages */
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Sedikit lebih kecil agar rapi */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 2rem;
 }
+
+/* == CSS BARU UNTUK SUB-JUDUL == */
+.packages h3.section-subheading {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    text-align: center;
+    margin-top: 4rem; /* Jarak antara grid wisuda dan judul event */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Judul pertama tidak perlu margin atas */
+.packages h3.section-subheading:first-of-type {
+    margin-top: 0;
+}
+
+.packages p.section-subdescription {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem; /* Jarak sebelum grid event */
+    color: var(--grey-color);
+}
+/* == AKHIR DARI CSS BARU == */
+
 
 .pricing-card {
     background: var(--white-color);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    padding-bottom: 2rem; /* Tambah padding bawah karena gambar */
+    padding-bottom: 2rem; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* Pastikan gambar tidak keluar dari card */
+    overflow: hidden; 
 }
 
 .pricing-card:hover {
@@ -320,7 +347,7 @@ section {
 
 .pricing-card img {
     width: 100%;
-    height: 200px; /* Tinggi gambar paket */
+    height: 200px; 
     object-fit: cover;
     margin-bottom: 1.5rem;
 }
@@ -328,7 +355,7 @@ section {
 .pricing-card h3 {
     font-size: 1.8rem;
     color: var(--primary-color);
-    padding: 0 2.5rem; /* Padding agar teks tidak mepet */
+    padding: 0 2.5rem; 
 }
 
 .pricing-card .price {
@@ -340,7 +367,7 @@ section {
 }
 
 .pricing-card ul {
-    padding: 0 2.5rem; /* Padding untuk daftar */
+    padding: 0 2.5rem; 
 }
 
 .pricing-card ul li {
@@ -374,7 +401,7 @@ section {
 
 .portfolio-item img {
     width: 100%;
-    height: 300px; /* Tinggi gambar portofolio */
+    height: 300px; 
     object-fit: cover;
     display: block;
     transition: transform 0.3s ease;
@@ -396,7 +423,7 @@ section {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 8px; /* Sama dengan item */
+    border-radius: 8px; 
 }
 
 .portfolio-item:hover .overlay {
@@ -408,7 +435,7 @@ section {
     font-size: 1.1rem;
     text-align: center;
     padding: 1rem;
-    margin: 0; /* Override default p margin */
+    margin: 0; 
 }
 
 .portfolio-btn {
@@ -563,5 +590,9 @@ footer {
     .pricing-card h3, .pricing-card .price, .pricing-card ul {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .packages h3.section-subheading {
+        font-size: 1.8rem; /* Sedikit lebih kecil di HP */
     }
 }
