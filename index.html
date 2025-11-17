@@ -1,134 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Project - Fotografi Wisuda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-       
-        <!-- Navvabar -->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#005f73;">
+    <header>
+        <nav class="navbar">
+            <a href="#hero" class="nav-logo">ALPHA PROJECT.</a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">Tentang Kami</a></li>
+                <li class="nav-item"><a href="#packages" class="nav-link">Paket Harga</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portofolio</a></li>
+                <li class="nav-item"><a href="#terms" class="nav-link">S&K</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link btn btn-primary">Booking</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="carousel-container">
+                <div class="carousel-slide fade">
+                    <img src="images/hero1.jpg" alt="Wisuda di kampus">
+                    <div class="hero-content">
+                        <h1>Abadikan Mahakarya Pencapaian Anda.</h1>
+                        <p>Fotografi wisuda profesional dengan perspektif unik dan artistik.</p>
+                        <a href="#packages" class="btn btn-primary">Lihat Paket</a>
+                    </div>
+                </div>
+                <div class="carousel-slide fade">
+                    <img src="images/hero2.jpg" alt="Wisudawan berpose ceria">
+                    <div class="hero-content">
+                        <h1>Momen Spesial, Kenangan Abadi.</h1>
+                        <p>Setiap detail penting, kami abadikan dengan sempurna.</p>
+                        <a href="#packages" class="btn btn-primary">Lihat Paket</a>
+                    </div>
+                </div>
+                <div class="carousel-slide fade">
+                    <img src="images/hero3.jpg" alt="Wisudawan bersama keluarga">
+                    <div class="hero-content">
+                        <h1>Rayakan Bersama Orang Terkasih.</h1>
+                        <p>Foto keluarga dan sahabat untuk melengkapi kebahagiaan Anda.</p>
+                        <a href="#packages" class="btn btn-primary">Lihat Paket</a>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
             <div class="container">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">StreetPhotography</a>
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Galeri</a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Harga</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/hafidh.albar_/">Instagram</a>
-                  </li>
-                 
+                <h2>Tentang Kami</h2>
+                <p>Kami percaya setiap pencapaian adalah sebuah mahakarya. Momen wisuda bukan hanya soal toga dan ijazah; ini adalah perayaan atas dedikasi, perjuangan, dan awal dari babak baru. Alpha Project hadir untuk mengabadikan energi dan emosi hari istimewa Anda dengan perspektif yang unik dan artistik. Kami berfokus pada kualitas, detail, dan cerita yang otentik, memastikan kenangan Anda abadi dan berkelas.</p>
+            </div>
+        </section>
+
+        <section class="packages" id="packages">
+            <div class="container">
+                <h2>Paket Wisuda 2025</h2>
+                <div class="pricing-grid">
+                    
+                    <div class="pricing-card">
+                        <img src="images/package_signature.jpg" alt="Paket Signature">
+                        <h3>Signature</h3>
+                        <div class="price">Rp. 400.000</div>
+                        <ul>
+                            <li>1 Wisudawan Utama</li>
+                            <li>Sesi Eksklusif 60 Menit</li>
+                            <li>20 Foto Pilihan (Edited)</li>
+                            <li>Termasuk Sesi Foto Bersama Keluarga & Rekan</li>
+                            <li>Sesi Dinamis Multi-Spot (1 area kampus)</li>
+                            <li>Seluruh File Foto Digital</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <img src="images/package_extended.jpg" alt="Paket Extended">
+                        <h3>Extended Pack</h3>
+                        <div class="price">Rp. 550.000</div>
+                        <ul>
+                            <li>1 Wisudawan Utama</li>
+                            <li>Sesi Ekstensif 90 Menit</li>
+                            <li>30 Foto Pilihan (Edited)</li>
+                            <li>Termasuk Sesi Foto Bersama Keluarga & Rekan</li>
+                            <li>Sesi Dinamis Multi-Spot (1 area kampus)</li>
+                            <li>Seluruh File Foto Digital</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <img src="images/package_duo.jpg" alt="Paket Duo">
+                        <h3>The Duo Pack</h3>
+                        <div class="price">Rp. 700.000</div>
+                        <ul>
+                            <li>1 Wisudawan Utama</li>
+                            <li>Sesi Eksklusif 60 Menit</li>
+                            <li>20 Foto Pilihan (Edited)</li>
+                            <li>Termasuk Sesi Foto Bersama Keluarga & Rekan</li>
+                            <li>Sesi Dinamis Multi-Spot (1 area kampus)</li>
+                            <li>Seluruh File Foto Digital</li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <img src="images/package_collective_a.jpg" alt="Paket Collective A">
+                        <h3>Collective A</h3>
+                        <div class="price">Rp 800.000</div>
+                        <ul>
+                            <li>3-5 Wisudawan</li>
+                            <li>Sesi Grup 90 Menit</li>
+                            <li>45 Foto Pilihan (Edited)</li>
+                            <li>Seluruh File Foto Digital</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <img src="images/package_collective_b.jpg" alt="Paket Collective B">
+                        <h3>Collective B</h3>
+                        <div class="price">Rp 1.150.000</div>
+                        <ul>
+                            <li>6-10 Wisudawan</li>
+                            <li>Sesi Grup 120 Menit</li>
+                            <li>70 Foto Pilihan (Edited)</li>
+                            <li>Seluruh File Foto Digital</li>
+                            <li><i>(Penambahan: Rp 100.000/orang)</i></li>
+                        </ul>
+                    </div>
+
+                    <div class="pricing-card">
+                        <img src="images/package_presession.jpg" alt="Paket Pre/Post Session">
+                        <h3>Pre/Post-Session</h3>
+                        <div class="price">Rp. 350.000</div>
+                        <ul>
+                            <li>1 Klien</li>
+                            <li>Sesi Eksklusif 60 Menit</li>
+                            <li>15 Foto Pilihan (Edited)</li>
+                            <li>Seluruh File Foto Digital</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2>Portofolio Kami</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio1.jpg" alt="Foto Wisuda 1">
+                        <div class="overlay">
+                            <p>Momen kebahagiaan wisudawan.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio2.jpg" alt="Foto Wisuda 2">
+                        <div class="overlay">
+                            <p>Bersama sahabat dan keluarga.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio3.jpg" alt="Foto Wisuda 3">
+                        <div class="overlay">
+                            <p>Detail toga dan senyum ceria.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio4.jpg" alt="Foto Wisuda 4">
+                        <div class="overlay">
+                            <p>Pose di spot kampus favorit.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio5.jpg" alt="Foto Wisuda 5">
+                        <div class="overlay">
+                            <p>Potret candid penuh emosi.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/portfolio6.jpg" alt="Foto Wisuda 6">
+                        <div class="overlay">
+                            <p>Gaya artistik dengan latar kampus.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/alphaproject.co" target="_blank" class="btn btn-primary portfolio-btn">Lihat Lebih Banyak di Instagram</a>
+            </div>
+        </section>
+
+
+        <section class="addons" id="addons">
+            <div class="container">
+                <h2>Layanan Tambahan (Add-On)</h2>
+                <ul>
+                    <li><strong>Highlight Video Sinematik (1 Menit):</strong> Rp 850.000</li>
+                    <li><strong>Perpanjangan Waktu Sesi:</strong> Rp 150.000 / 30 Menit</li>
+                    <li><strong>Tambahan Foto Pilihan (Edited):</strong> Rp 50.000 / 5 Foto</li>
+                    <li><strong>Cetak Premium & Bingkai Minimalis (10R):</strong> Rp 65.000 / pcs</li>
                 </ul>
-              </div>
             </div>
-          </nav>
-        
-        <!-- Akhir navbar -->
-       
-        <!-- jumbotron -->
-        <section class="jumbotron jumbotron-fluid text-center" >
-            <img src="img/IMG_2847.JPG" alt="Hafidh Abrar Albar" width="200"class="img-thumbnail"> 
-                
-            <h2 class="display-4">Hafidh Abrar Albar</h2>
-                <p class="lead">StreetPhotography.</p>
-                <hr class="my-4"> 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#94d2bd" fill-opacity="1" d="M0,256L0,32L36.9,32L36.9,128L73.8,128L73.8,32L110.8,32L110.8,288L147.7,288L147.7,192L184.6,192L184.6,32L221.5,32L221.5,64L258.5,64L258.5,192L295.4,192L295.4,160L332.3,160L332.3,64L369.2,64L369.2,288L406.2,288L406.2,288L443.1,288L443.1,128L480,128L480,64L516.9,64L516.9,96L553.8,96L553.8,192L590.8,192L590.8,64L627.7,64L627.7,192L664.6,192L664.6,224L701.5,224L701.5,192L738.5,192L738.5,192L775.4,192L775.4,192L812.3,192L812.3,256L849.2,256L849.2,288L886.2,288L886.2,128L923.1,128L923.1,64L960,64L960,128L996.9,128L996.9,192L1033.8,192L1033.8,320L1070.8,320L1070.8,288L1107.7,288L1107.7,320L1144.6,320L1144.6,128L1181.5,128L1181.5,256L1218.5,256L1218.5,192L1255.4,192L1255.4,128L1292.3,128L1292.3,160L1329.2,160L1329.2,192L1366.2,192L1366.2,0L1403.1,0L1403.1,224L1440,224L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"></path></svg>
-          
-          </section>
-          
+        </section>
 
-        <!-- AKhir jumbotron -->
-       
-        <!-- about me -->
-        <section id="about">
+        <section class="terms" id="terms">
+            <div class="container">
+                <h2>Syarat & Ketentuan</h2>
+                <ul>
+                    <li><strong>Reservasi:</strong> Booking slot dikonfirmasi setelah pembayaran Booking Fee (DP) 50%. Booking Fee bersifat non-refundable jika terjadi pembatalan oleh klien.</li>
+                    <li><strong>Waktu Sesi:</strong> Durasi sesi dihitung tepat sesuai waktu yang telah disepakati.</li>
+                    <li><strong>Keterlambatan:</strong> Toleransi keterlambatan klien adalah 10 menit. Keterlambatan akan mengurangi total durasi sesi.</li>
+                    <li><strong>Pengiriman File:</strong> Seluruh file foto digital (JPG mentah) dikirimkan maksimal H+1. Link Google Drive akan tersedia selama 14 hari setelah foto editan dikirim.</li>
+                    <li><strong>Proses Editing:</strong> Waktu pengerjaan foto pilihan (edited) adalah 10-14 hari kerja setelah klien mengonfirmasi foto pilihannya.</li>
+                    <li><strong>Lingkup Editing:</strong> Standar editing meliputi color grading dan cropping. Tidak termasuk manipulasi digital atau retouching.</li>
+                    <li><strong>Biaya Eksternal:</strong> Harga paket belum termasuk biaya transportasi di luar Kota Semarang atau biaya masuk/izin lokasi.</li>
+                    <li><strong>Hak Publikasi:</strong> Klien menyetujui bahwa Alpha Project memiliki hak untuk menggunakan hasil foto sebagai bagian dari portofolio dan materi promosi.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Kontak & Booking</h2>
+                <p>Siap mengabadikan momen Anda? Hubungi kami.</p>
+                <div class="contact-links">
+                    <a href="https://api.whatsapp.com/send?phone=6285159012020" target="_blank" class="btn btn-primary">
+                        WhatsApp (+6285159012020)
+                    </a>
+                    <a href="https://www.instagram.com/alphaproject.co" target="_blank" class="btn btn-secondary">
+                        Instagram (@alphaproject.co)
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="container">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 >About Me</h2>
-            </div>
-        </div class="row">
-            <div class="col"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quia, dolor distinctio consectetur, libero tenetur similique error sint aspernatur aut cumque assumenda praesentium totam cupiditate nemo vel!</p></div>
-            <div class="col"> <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur veniam, debitis molestiae aspernatur laudantium quisquam, provident itaque ducimus dolorem, architecto ea inventore dolorum quis natus cumque. Porro error laudantium quod?</p></div>
-         </div>
-        </section>
+            <p>&copy; 2025 ALPHA PROJECT. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <!-- about me akhir -->
-
-        <!-- portofolio -->
-        <section id="project">
-            <div class="container">
-                <div class="row text-center mb-3">
-                    <div class="col">
-                        <h2>Galeri</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                         <div class="card">
-                            <img src="Galeri/1.jpg" class="card-img-top" alt="portofolio1">
-                            <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-sm-4">
-                         <div class="card">
-                            <img src="Galeri/2.jpg" class="card-img-top" alt="portofolio2">
-                            <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-sm-4">
-                         <div class="card">
-                            <img src="Galeri/4.jpg" class="card-img-top" alt="portofolio4">
-                            <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Akhir Portofolio -->
-
-        <!-- Contact -->
-
-       <section id="Contact">
-            <div class="container">
-                <div class="row text-center mb-3">
-                    <h2> Contact Me</h2>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row text-align">
-                    <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolore quo suscipit, consequuntur mollitia repellendus ea nemo, eligendi ex optio sit placeat repudiandae a corrupti consectetur, molestias id qui impedit?</h2>
-                </div>
-            </div>
-       </section>
-        <!-- akhir Contact -->
+    <script src="script.js"></script>
+</body>
+</html>
