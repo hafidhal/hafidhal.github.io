@@ -325,6 +325,37 @@ section {
 }
 /* == AKHIR DARI CSS BARU == */
 
+/* == CSS BAGIAN PROMOSI (BARU) == */
+.promotion {
+    background-color: var(--light-color); /* Sama dengan bg body */
+}
+
+.promo-box {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 3rem 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid var(--secondary-color); /* Border emas (premium) */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.promo-box h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color); /* Judul emas */
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.promo-box p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ================================ */
 
 .pricing-card {
     background: var(--white-color);
@@ -596,3 +627,4 @@ footer {
         font-size: 1.8rem; /* Sedikit lebih kecil di HP */
     }
 }
+
