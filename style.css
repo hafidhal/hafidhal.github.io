@@ -386,7 +386,7 @@ section {
 .pricing-card h3 {
     font-size: 1.8rem;
     color: var(--primary-color);
-    padding: 0 2.5rem; 
+    padding: 0 2rem; 
 }
 
 .pricing-card .price {
@@ -394,7 +394,7 @@ section {
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 1.5rem;
-    padding: 0 2.5rem;
+    padding: 0 2rem;
 }
 
 .pricing-card ul {
@@ -627,4 +627,5 @@ footer {
         font-size: 1.8rem; /* Sedikit lebih kecil di HP */
     }
 }
+
 
